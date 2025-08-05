@@ -22,8 +22,4 @@
     <ProjectReference Include="..\LunarisAPI.App\LunarisAPI.App.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Persistence\Repository\" />
-  </ItemGroup>
-
 </Project>
