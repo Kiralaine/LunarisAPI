@@ -1,4 +1,4 @@
-
+﻿
 namespace LunarisAPI.App
 {
     public class Program
@@ -25,6 +25,9 @@ namespace LunarisAPI.App
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
+
+
 
 
             app.Run();

@@ -15,4 +15,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Endpoints\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LunarisAPI.App\LunarisAPI.App.csproj" />
+    <ProjectReference Include="..\LunarisAPI.Infastructure\LunarisAPI.Infastructure.csproj" />
+  </ItemGroup>
+
 </Project>
