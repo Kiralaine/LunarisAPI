@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunarisAPI.Infastructure", "src\LunarisAPI.Infastructure\LunarisAPI.Infastructure.csproj", "{951782B9-11B6-4C6D-AC1F-2F1436A87676}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunarisAPI.Domain", "src\LunarisAPI.Domain\LunarisAPI.Domain.csproj", "{E0A6EBB8-B8E4-443C-88EB-336D924DD01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunarisAPI.Presentation", "src\LunarisAPI.Presentation\LunarisAPI.Presentation.csproj", "{EAF3CB35-DB41-0D92-2773-6CE8E0D38776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunarisAPI.App", "src\LunarisAPI.App\LunarisAPI.App.csproj", "{8B9F349D-7981-4357-A4A2-52498EE7DD49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{951782B9-11B6-4C6D-AC1F-2F1436A87676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951782B9-11B6-4C6D-AC1F-2F1436A87676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951782B9-11B6-4C6D-AC1F-2F1436A87676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951782B9-11B6-4C6D-AC1F-2F1436A87676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A6EBB8-B8E4-443C-88EB-336D924DD01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A6EBB8-B8E4-443C-88EB-336D924DD01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A6EBB8-B8E4-443C-88EB-336D924DD01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A6EBB8-B8E4-443C-88EB-336D924DD01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF3CB35-DB41-0D92-2773-6CE8E0D38776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF3CB35-DB41-0D92-2773-6CE8E0D38776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF3CB35-DB41-0D92-2773-6CE8E0D38776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF3CB35-DB41-0D92-2773-6CE8E0D38776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9F349D-7981-4357-A4A2-52498EE7DD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9F349D-7981-4357-A4A2-52498EE7DD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9F349D-7981-4357-A4A2-52498EE7DD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9F349D-7981-4357-A4A2-52498EE7DD49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFC25F74-5CB8-4221-B2E9-824BEAA5F4E4}
+	EndGlobalSection
+EndGlobal
