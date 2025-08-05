@@ -1,7 +1,9 @@
 ﻿using LunarisAPI.App.Interfaces;
 using LunarisAPI.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +21,11 @@ namespace LunarisAPI.Infastructure.Persistence.Repository
 
         public async Task BanAsync(long UserID)
         {
-            throw new NotImplementedException();
+            
+            var user = new User { UserId = UserID, isBanned = true };
+            appDbContext.Users.Attach(user);
+            appDbContext.Entry(user).Property(u => u.isBanned).IsModified = true;
+            await Task.CompletedTask;
         }
 
         public void Delete(User user)
@@ -34,22 +40,24 @@ namespace LunarisAPI.Infastructure.Persistence.Repository
 
         public async Task<int> SaveChangesAsync()
         {
-            throw new NotImplementedException();
+           return  await appDbContext.SaveChangesAsync();
         }
 
         public IQueryable<User> SelectAll()
         {
-            throw new NotImplementedException();
+            return appDbContext.Users;
         }
 
         public async Task<User?> SelectByIdAsync(long UserId)
         {
-            throw new NotImplementedException();
+            var user = await appDbContext.Users.FirstOrDefaultAsync(u => u.UserId == UserId);
+
+            return user;
         }
 
         public void  Update(User user)
         {
-            throw new NotImplementedException();
+            appDbContext.Users.Update(user);
         }
     }
 }
