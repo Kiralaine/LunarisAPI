@@ -9,12 +9,12 @@ namespace LunarisAPI.App.Interfaces
 {
     public  interface IUserRepository
     {
-        Task<User?> SelectByIdAsync(long UserId);
-        IQueryable<User> SelectAll();
-        Task InsertAsync(User user);
-        void Update(User user);
-        void Delete(User user);
-        Task BanAsync(long UserID);
-        Task<int> SaveChangesAsync();
+        public Task<User?> SelectByIdAsync(long UserId);
+        public IQueryable<User> SelectAll();
+        public Task InsertAsync(User user);
+        public  void Update(User user);
+        public void Delete(User user);
+        public Task BanAsync(long UserID);
+        public Task<int> SaveChangesAsync();
     }
 }

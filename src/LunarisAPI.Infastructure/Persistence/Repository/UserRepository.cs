@@ -8,39 +8,46 @@ using System.Threading.Tasks;
 
 namespace LunarisAPI.Infastructure.Persistence.Repository
 {
+
     public class UserRepository : IUserRepository
     {
-        Task IUserRepository.BanAsync(long UserID)
+        private readonly AppDbContext appDbContext;
+        public UserRepository(AppDbContext _dbContext)
+        {
+            appDbContext = _dbContext;
+        }
+
+        public async Task BanAsync(long UserID)
         {
             throw new NotImplementedException();
         }
 
-        void IUserRepository.Delete(User user)
+        public void Delete(User user)
+        {
+            appDbContext.Users.Remove(user);
+        }
+
+        public async Task InsertAsync(User user)
+        {
+            await appDbContext.Users.AddAsync(user);
+        }
+
+        public async Task<int> SaveChangesAsync()
         {
             throw new NotImplementedException();
         }
 
-        Task IUserRepository.InsertAsync(User user)
+        public IQueryable<User> SelectAll()
         {
             throw new NotImplementedException();
         }
 
-        Task<int> IUserRepository.SaveChangesAsync()
+        public async Task<User?> SelectByIdAsync(long UserId)
         {
             throw new NotImplementedException();
         }
 
-        IQueryable<User> IUserRepository.SelectAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<User?> IUserRepository.SelectByIdAsync(long UserId)
-        {
-            throw new NotImplementedException();
-        }
-
-        void IUserRepository.Update(User user)
+        public void  Update(User user)
         {
             throw new NotImplementedException();
         }
