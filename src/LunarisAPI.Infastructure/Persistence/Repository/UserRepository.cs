@@ -59,5 +59,10 @@ namespace LunarisAPI.Infastructure.Persistence.Repository
         {
             appDbContext.Users.Update(user);
         }
+        public async Task<ICollection<User>> SelectAllAsync()
+        {
+            var todos = await appDbContext.Users.ToListAsync();
+            return todos;
+        }
     }
 }

@@ -12,6 +12,8 @@ namespace LunarisAPI.App.Interfaces
         public Task<User?> SelectByIdAsync(long UserId);
         public IQueryable<User> SelectAll();
         public Task InsertAsync(User user);
+        Task<ICollection<User>> SelectAllAsync();
+
         public  void Update(User user);
         public void Delete(User user);
         public Task BanAsync(long UserID);
