@@ -16,9 +16,10 @@ namespace LunarisAPI.Infastructure.Persistence.Configurations
             builder.ToTable("Playlists");
             builder.HasKey(p => p.PlaylistId);
             builder.Property(p => p.Name).IsRequired().HasMaxLength(70);
-            builder.Property(p => p.PictureURL).HasMaxLength(500);
             builder.Property(p => p.Description).HasMaxLength(500);
+            builder.Property(p => p.CoverFileId);
             builder.HasMany(p => p.Musics).WithMany(m => m.Playlists).UsingEntity(j => j.ToTable("PlaylistMusics"));
+            builder.Property(m => m.CreatedAt).IsRequired().HasDefaultValueSql("UTC_TIMESTAMP()");
 
         }
     }

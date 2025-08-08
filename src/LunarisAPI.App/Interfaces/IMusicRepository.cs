@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LunarisAPI.App.Interfaces
 {
-    internal interface IMusicRepository
+    public interface IMusicRepository
     {
+
     }
 }

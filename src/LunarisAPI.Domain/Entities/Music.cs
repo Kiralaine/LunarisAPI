@@ -13,10 +13,8 @@ namespace LunarisAPI.Domain.Entities
         public string Artist { get; set; }
         public string  Genre { get; set; }
         public TimeSpan  Duration { get; set; }
-        public DateTime UploadDate { get; set; }
+        public DateTime UploadDate { get; set; } = DateTime.UtcNow;
+        //public 
         public ICollection<Playlist> Playlists { get; set; } = new List<Playlist>();
-
-
-
     }
 }
