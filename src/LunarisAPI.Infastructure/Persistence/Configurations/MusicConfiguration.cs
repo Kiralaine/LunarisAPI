@@ -20,7 +20,7 @@ namespace LunarisAPI.Infastructure.Persistence.Configurations
             builder.Property(m => m.Genre).HasMaxLength(60);
             builder.Property(m => m.Duration).IsRequired();
             builder.Property(m=>m.UploadDate).IsRequired().HasDefaultValueSql("UTC_TIMESTAMP()");
-            //builder.Property(m => m.FileId).IsRequired().HasMaxLength(500);
+            builder.Property(m => m.FileID);
         }
     }
 }

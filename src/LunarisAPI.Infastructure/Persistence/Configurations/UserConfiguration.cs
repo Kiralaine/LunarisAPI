@@ -18,7 +18,7 @@ namespace LunarisAPI.Infastructure.Persistence.Configurations
             builder.HasIndex(u => u.Username).IsUnique();
 
             //Picture Conf
-            builder.Property(u => u.ProfilePictureId).HasMaxLength(500);
+            builder.Property(u => u.ProfilePictureId);
 
             // Email Confs
             builder.Property(u => u.Email).IsRequired().HasMaxLength(60);
