@@ -6,7 +6,7 @@ namespace LunarisAPI.Domain.Entities
     {
         public long UserId { get; set; }
 
-        public string?  ProfilePictureURL { get; set; }
+        public string?  ProfilePictureId { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
         public string Firstname { get; set; }

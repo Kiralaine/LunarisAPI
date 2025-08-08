@@ -14,8 +14,6 @@ namespace LunarisAPI.Domain.Entities
         public string  Genre { get; set; }
         public TimeSpan  Duration { get; set; }
         public DateTime UploadDate { get; set; }
-        public string FileUrl { get; set; }
-
         public ICollection<Playlist> Playlists { get; set; } = new List<Playlist>();
 
 
